@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch testFile2",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.testFile2",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
             "name": "Launch testFile1",
             "request": "launch",
             "mainClass": "com.mycompany.app.testFile1",
