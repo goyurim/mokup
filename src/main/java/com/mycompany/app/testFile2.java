@@ -11,12 +11,10 @@ public class testFile2 {
             int n1 = in.nextInt();
             int n2 = in.nextInt();
 
-
-
-
             int gcd = getGcd(Math.max(n1,n2), Math.min(n1,n2));
-
-            System.out.println((n1*n2)/gcd);
+            
+            int result = (n1*n2)/gcd;
+            System.out.println(result);
         }
         in.close();
     }
