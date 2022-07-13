@@ -11,8 +11,7 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) throws IOException{
-        App test = new App();
-        similarity sm = new similarity();
+        similarity_detection sd = new similarity_detection();
         diff_match_patch dmp = new diff_match_patch();
         String regex = "(//).*|/\\*([^*]|[\r\n]|(\\*+([^*/]|[\r\n])))*\\*+/|\\R| ";
         //전처리
@@ -23,7 +22,7 @@ public class App {
         System.out.println(s2);
         System.out.println();
         //다른 개인 오픈소스 이용한 방법
-        System.out.println("개인 오픈소스 결과: "+Math.round(sm.similarity(s1,s2)*100));
+        System.out.println("개인 오픈소스 결과: "+Math.round(sd.similarity(s1,s2)*100));
 
         //google/diff-match-patch 라이브러리를 이용한 방법
         List<diff_match_patch.Diff> lDiffs = dmp.diff_main(s1,s2);

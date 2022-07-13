@@ -1,6 +1,10 @@
 package com.mycompany.app;
 
-public class similarity {
+public class similarity_detection {
+    public static void main(){
+
+    }
+    
     public double similarity(String s1, String s2) {
         String longer = s1, shorter = s2;
         
